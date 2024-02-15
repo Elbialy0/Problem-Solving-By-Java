@@ -6,4 +6,14 @@ public class BitwiseOperation {
         }
         return nOfBits;
     }
+    public static long convertToDecimal(long num,long base){
+        long newNum=0;
+        int power=0;
+        while (num>0){
+            long a = num%10;
+            newNum+= (long) (a*Math.pow(base,power++));
+            num/=10;
+        }
+        return newNum;
+    }
 }

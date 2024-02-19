@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+
     public static int [] freqSmallLitters(String st){
         int [] freq = new int[26];
         char []  arr = st.toCharArray();
